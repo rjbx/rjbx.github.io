@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="main.css" rel="stylesheet">
+    <title>RJB's page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="a page for recording thoughts and experimenting with code">
+    <meta name="keywords" content="blog, education, coding">
+</head>
+
+<body>
+    <a class="target" id="scroll"></a>
+    <header>
+        <div class="droplet"></div>
+        <div class="ripple"></div>
+        <ul class="social">
+            <li>
+                <a target="_blank" href="https://github.com/rjbx"><img src="images/social-github.png" alt="Github" width="32" height="32"></a>
+            </li>
+        </ul>
+        <h1 class="title">
+            <a target="_blank" href="https://rjbx.github.io/">RJBx</a>
+        </h1>
+        <h2>&lt;learner type='active'/&gt;</h2>
+        <div class="wrapper"></div>
+    </header>
+    <nav class="sticky">
+        <ul>
+            <li><a accesskey="b" href="#blog">Blog</a></li>
+            <li><a accesskey="n" href="#misc">Misc</a></li>
+            <li><a accesskey="c" href="#chat">Chat</a></li>
+        </ul>
+    </nav>
+    <main>
+    	<div class="intro">
+            <p id="blurb">
+                a page for recording thoughts and experimenting with code
+            </p>
+            <div class="choices">
+                <div class="choice">
+                    <div class="adhesive"></div>
+                    <div class="note">
+                        <div class="description">
+                            <p>personal stuff</p>
+                        </div>
+                        <div class="decision">
+                            <form action="#blog">
+                                <input type="submit" value="Writings">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="choice">
+                    <div class="adhesive"></div>
+                    <div class="note">
+                        <div class="description">
+                            <p>work stuff</p>
+                        </div>
+                        <div class="decision">
+                            <form target="_blank" action="https://coded.art">
+                                <input type="submit" value="Projects">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <a class="target" id="blog">
+                <h3>Blog</h3>
+            </a>
+            <br>
+            <ul>
+                <li>
+                    <div class="accordion">
+                        <a href="#expand0.7" class="expand" id="expand0.7">[+]</a> Prepare for Linear Algebra
+                        <div class="extensible">
+                            <article>
+                                <h5><time datetime="2020-12-18">December 18th, 2020</time></h5>
+                                <br>
+                                <p>
+                                    Linear Algebra studies properties, and approaches to solving, systems of linear equations, or linear systems. A linear equation can be expressed as <i>a</i><sub><i>1</i></sub><i><b>x</b></i><sub><i><b>1</b></i></sub><i>+</i><i>a</i><sub><i>2</i></sub><i><b>x</b></i><sub><i><b>2</b></i></sub><i>+...+</i><i>a</i><sub><i>n</i></sub><i><b>x</b></i><sub><i><b>n</b></i></sub><i>=
+</i><i><b>b</b></i>, where {<i><b>x</b></i><sub><i><b>1</b></i></sub><i>,
+</i><i><b>x</b></i><sub><i><b>2</b></i></sub>,&hellip;,
+                                    <i><b>x</b></i><sub><i><b>n</b></i></sub>} are variables, and {<i>a</i><sub><i>1</i></sub><i>,
+</i><i>a</i><sub><i>2</i></sub><i>,&hellip;,
+</i><i>a</i><sub><i>n</i></sub>} are, each, a set of coefficients corresponding to each variable. Linear equations within the same system are expressed with the same variables. A solution to the linear system is a set of values {<i><b>s</b></i><sub><i><b>1</b></i></sub><i>,
+</i><i><b>s</b></i><sub><i><b>2</b></i></sub>,&hellip;,
+                                    <i><b>s</b></i><sub><i><b>n</b></i></sub>} which, when substituted into the corresponding variables, make each linear equation true. A system may have more than one solution, and the set of all possible solutions is a solution set. One approach to solving a system of linear equations expresses one linear equation in terms of a single variable, then substitutes the expression into instances of the same variable within other equations of the system, repeating the process until a solution can be determined. Linear Algebra studies an approach that permits solutions for all variables within a system to be computed simultaneously, using algorithms called row reduction operations.</p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>The coefficients of each linear equation can be represented by a row within a matrix. Row reduction operations, which are applied to a matrix, are computationally efficient algorithms involving basic arithmetic. The elementary row reduction operations are: a. replacing one row by the sum of itself and the scale of another row; b. interchanging the order of two rows; c. scalar multiplying a row by a nonzero constant. Row reduction operations are applied in such a way as to manipulate the entries of the matrix to embody a particular form: namely,<i>
+</i><i>row echelon</i> (zeros beneathe and to the left of each leading entry) and
+                                    <i>reduced row
+echelo</i><i>n</i> (zeros beneath, to the left of and above each leading entry, where each leading entry must also be the number one) . From the properties of these forms can be inferred properties of the associated system of equations, including solutions of the system. A matrix that positions the
+                                    <i><b> b</b></i> value, from the linear equation <i>a</i><sub><i>1</i></sub><i><b>x</b></i><sub><i><b>1</b></i></sub><i>+</i><i>a</i><sub><i>2</i></sub><i><b>x</b></i><sub><i><b>2</b></i></sub><i>+...+</i><i>a</i><sub><i>n</i></sub><i><b>x</b></i><sub><i><b>n</b></i></sub><i>=
+</i><i><b>b</b></i><i>,</i> into the rightmost column of the matrix is called an<i>
+augmented matrix. A</i>fter reduction to reduced row echelon form, the manipulated values of the augmented matrix indicate the solution for<b>
+</b><i><b>x</b></i>, or
+                                    <b> </b>{<i><b>x</b></i><sub><i><b>1</b></i></sub><i>,
+</i><i><b>x</b></i><sub><i><b>2</b></i></sub>,&hellip;,
+                                    <i><b>x</b></i><sub><i><b>n</b></i></sub>}.
+
+                                </p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>Take, for example, a system of linear equations {2<i><b>x</b></i><sub><i><b>1</b></i></sub><i>+</i>6<i><b>x</b></i><sub><i><b>2</b></i></sub>=6,
+                                    <i><b>x</b></i><sub><i><b>1</b></i></sub><i>+</i><i>2</i><i><b>x</b></i><sub><i><b>2</b></i></sub><i>=</i>2}. In augmented matrix form, the two rows may be interchanged, moving [1 2 2] from the second row to the first row, and [2 6 6] from the first row to the second row. The second row of [2 6 6] may be replaced with the sum of itself, and the first row of [1 2 2] scaled by a factor of -2, to yield [0 2 2] for the second row and [1 2 2] for the first row. The form of this matrix is called <i>echelon
+form</i>, and indicates the location of the <i>pivots</i>, or leading entries, for each row (1<sup>st</sup> column in the first row; 2<sup>nd</sup> column in the 2<sup>nd</sup> row). The second row may then be scaled by a factor of &frac12; to yield [0 1 1] for the second row. Replacing the first row with the sum of itself, and the second row scaled by a factor of -2, yields [1 0 0] for the first row and [0 1 1] for the second row. The form of this matrix is called
+                                    <i>reduced row echelon </i>form, and indicates the solution for row equivalent matrices. Row equivalent matrices are matrices that, with any combination of row reduction operations, yield the same matrix in reduced row echelon form. Here, the first row indicates that <i><b>x</b></i><sub><i><b>1 </b></i></sub>equals 0 and the second row indicates that <i><b>x</b></i><sub><i><b>2
+</b></i></sub>equals 1. Thus, the solution of the linear system is {0, 1}.
+                                </p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>The linear equation <i>a</i><sub><i>1</i></sub><i><b>x</b></i><sub><i><b>1</b></i></sub><i>+</i><i>a</i><sub><i>2</i></sub><i><b>x</b></i><sub><i><b>2</b></i></sub><i>+...+</i><i>a</i><sub><i>n</i></sub><i><b>x</b></i><sub><i><b>n</b></i></sub><i>=
+</i><i><b>b </b></i>can be expressed in different forms: as a vector equation, a matrix equation, or a linear transformation. As a vector equation, a
+                                    <sub>1
+</sub>is the first column, <i>a</i><sub><i>2
+</i></sub>is the second column, and<i><b> b</b></i> is the last column<i><b> </b></i>of the augmented matrix in reduced row echelon form i.e. [1, 0]<i><b>x</b></i><sub><i><b>1</b></i></sub> + [0, 1]<i><b>x</b></i><sub><i><b>2</b></i></sub> = [0, 1]. (In the preceding example and hereforth, a comma inside of a matrix indicates a separate row, so, for example, two matrix entries separated by a comma indicates a two row, single column matrix i.e. a column vector.) As a matrix equation <i>A</i><i><b>x</b></i><i>=</i><i><b>b</b></i>, matrix
+                                    <i> A </i>is composed as [<i>a</i><sub><i>1</i></sub><i>
+</i><i>a</i><sub><i>2
+</i></sub><i> </i><i>a</i><sub><i>n</i></sub>] and the augmented column of the reduced row echelon form of [<i>
+A |</i><i><b> b</b></i> ] is<i><b> x</b></i>.<i><b>
+</b></i>As a linear transformation <i>A</i><i><b>x</b></i><i>=T(</i><i><b>x</b></i><i>)</i>, the image of <i><b>x</b></i> under the action of<i>
+T </i>is given by <i>T(</i><i><b>x</b></i><i>),
+</i>where
+                                    <i>T</i> can be viewed as the mapping of <i><b>x</b></i> to <i><b>b</b></i>. The various forms of linear equation <i>a</i><sub><i>1</i></sub><i><b>x</b></i><sub><i><b>1</b></i></sub><i>+</i><i>a</i><sub><i>2</i></sub><i><b>x</b></i><sub><i><b>2</b></i></sub><i>+...+</i><i>a</i><sub><i>n</i></sub><i><b>x</b></i><sub><i><b>n</b></i></sub><i>=
+</i><i><b>b</b></i> yield distinct, but interconnected, insights.
+                                </p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>&bull; When the reduced row echelon form of an augmented matrix with<i>
+m</i> rows and<i> n</i> columns contains a pivot in the rightmost column, (e.g. [1 2 2, 2 4 6] reduces to [1 2 2, 0 0 2] where 0 &ne; 2): then no value for <i><b>b</b></i> in <i>R</i><sup><i>m</i></sup><i>
+</i>for the linear equation<b>
+</b><i>a</i><sub><i>1</i></sub><i><b>x</b></i><sub><i><b>1</b></i></sub><i>+</i><i>a</i><sub><i>2</i></sub><i><b>x</b></i><sub><i><b>2</b></i></sub><i>+...+</i><i>a</i><sub><i>n</i></sub><i><b>x</b></i><sub><i><b>n</b></i></sub><i>=
+</i><i><b>b</b></i> has a solution in <i>R</i><sup><i>n</i></sup>, and the system is inconsistent.
+                                </p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>&bull; When the reduced row echelon form of an augmented matrix with<i>
+m</i> rows and<i> n</i> columns does not contain a pivot in the rightmost column and does not contain a pivot in each row (e.g. [1 2 2, 2 4 4] reduces to [1 2 2, 0 0 0], where <i><b>x</b></i><sub><i><b>1</b></i></sub><i>
+</i>equals 2 &ndash; 2<i><b>x</b></i><sub><i><b>2</b></i></sub>): then some real values for <i><b>b</b></i> in
+                                    <i>R</i><sup><i>m</i></sup> for the linear equation<b>
+</b><i>a</i><sub><i>1</i></sub><i><b>x</b></i><sub><i><b>1</b></i></sub><i>+</i><i>a</i><sub><i>2</i></sub><i><b>x</b></i><sub><i><b>2</b></i></sub><i>+...+</i><i>a</i><sub><i>n</i></sub><i><b>x</b></i><sub><i><b>n</b></i></sub><i>=
+</i><i><b>b</b></i> have solutions in <i>R</i><sup><i>n</i></sup> where
+                                    <i><b>
+b </b></i>is a linear combination of the vectors {<i>a</i><sub><i>1</i></sub><i>,
+</i><i>a</i><sub><i>2</i></sub><i>,&hellip;,
+</i><i>a</i><sub><i>n</i></sub>}, the system is consistent, and at least one element of the set {<i>a</i><sub><i>1</i></sub><i>,
+</i><i>a</i><sub><i>2</i></sub><i>,&hellip;,
+</i><i>a</i><sub><i>n</i></sub>} is a linear combination of the other elements of the set. In other words, an element of the set {<i>a</i><sub><i>1</i></sub><i>,
+</i><i>a</i><sub><i>2</i></sub><i>,&hellip;,
+</i><i>a</i><sub><i>n</i></sub>} is the sum of scalar multiples of other elements of the set.
+                                </p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>&bull; When the reduced row echelon form of an augmented matrix with<i>
+m</i> rows and<i> n</i> columns does not contain a pivot in the rightmost column, does contain a pivot in each row, and, where
+                                    <i><b>b</b></i> is the zero vector, <i>a</i><sub><i>1</i></sub><i><b>x</b></i><sub><i><b>1</b></i></sub><i>+</i><i>a</i><sub><i>2</i></sub><i><b>x</b></i><sub><i><b>2</b></i></sub><i>+...+</i><i>a</i><sub><i>n</i></sub><i><b>x</b></i><sub><i><b>n</b></i></sub><i>=</i>
+                                    <b>0</b> contains a nontrivial solution (e.g. [1 2 2 0, 1 2 6 0] reduces to [1 2 0 0, 0 0 1 0], with <i><b>x</b></i><sub><i><b>1</b></i></sub><i><b>
+</b></i>equal to -2<i><b>x</b></i><sub><i><b>2</b></i></sub> and <i><b>x</b></i><sub><i><b>3</b></i></sub> equal to zero): then every value for<b> </b><i><b>b</b></i> in <i>R</i><sup><i>m</i></sup> for the linear equation<b>
+</b><i>a</i><sub><i>1</i></sub><i><b>x</b></i><sub><i><b>1</b></i></sub><i>+</i><i>a</i><sub><i>2</i></sub><i><b>x</b></i><sub><i><b>2</b></i></sub><i>+...+</i><i>a</i><sub><i>n</i></sub><i><b>x</b></i><sub><i><b>n</b></i></sub><i>=
+</i><i><b>b</b></i><i> </i>has a solution where<i><b>
+b </b></i>is a linear combination of the vectors {<i>a</i><sub><i>1</i></sub><i>,
+</i><i>a</i><sub><i>2</i></sub><i>,&hellip;,
+</i><i>a</i><sub><i>n</i></sub>}, the system is consistent, <i>T</i> maps each <i><b>x</b></i> in
+                                    <i>R</i><sup><i>n</i></sup><sup><i>
+</i></sup>to at least one
+                                    <i><b>b</b></i> in
+                                    <i>R</i><sup><i>m</i></sup>, no elements of the set {<i>a</i><sub><i>1</i></sub><i>,
+</i><i>a</i><sub><i>2</i></sub><i>,&hellip;,
+</i><i>a</i><sub><i>n</i></sub>} are linear combinations of other elements of the set, and the span (the set of all linear combinations) of vectors {<i>a</i><sub><i>1</i></sub><i>,
+</i><i>a</i><sub><i>2</i></sub><i>,&hellip;,
+</i><i>a</i><sub><i>n</i></sub>} is in <i>R</i><sup><i>m</i></sup>.
+
+                                </p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>&bull; When the reduced row echelon form of an augmented matrix with<i>
+m</i> rows and<i> n</i> columns does not contain a pivot in the rightmost column, does contain a pivot in each row, and, where
+                                    <i><b>b</b></i> is the zero vector, <i>a</i><sub><i>1</i></sub><i><b>x</b></i><sub><i><b>1</b></i></sub><i>+</i><i>a</i><sub><i>2</i></sub><i><b>x</b></i><sub><i><b>2</b></i></sub><i>+...+</i><i>a</i><sub><i>n</i></sub><i><b>x</b></i><sub><i><b>n</b></i></sub><i>=</i>
+                                    <b>0</b> contains only the trivial solution (e.g. [1 2 0, 2 6 0] reduces to [1 0 0, 0 1 0], where
+                                    <i><b>x</b></i><sub><i><b>1</b></i></sub> and <i><b>x</b></i><sub><i><b>2</b></i></sub> both equal zero): then every value for<b> </b><i><b>b</b></i> in <i>R</i><sup><i>m</i></sup> for the linear equation<b>
+</b><i>a</i><sub><i>1</i></sub><i><b>x</b></i><sub><i><b>1</b></i></sub><i>+</i><i>a</i><sub><i>2</i></sub><i><b>x</b></i><sub><i><b>2</b></i></sub><i>+...+</i><i>a</i><sub><i>n</i></sub><i><b>x</b></i><sub><i><b>n</b></i></sub><i>=
+</i><i><b>b</b></i><i> </i>has a solution where<i><b>
+b </b></i>is a linear combination of the vectors {<i>a</i><sub><i>1</i></sub><i>,
+</i><i>a</i><sub><i>2</i></sub><i>,&hellip;,
+</i><i>a</i><sub><i>n</i></sub>}, the system is consistent, <i>T</i> maps each <i><b>x</b></i> in
+                                    <i>R</i><sup><i>n</i></sup><sup><i>
+</i></sup>to only one
+                                    <i><b>b</b></i> in
+                                    <i>R</i><sup><i>m</i></sup>, no elements of the set {<i>a</i><sub><i>1</i></sub><i>,
+</i><i>a</i><sub><i>2</i></sub><i>,&hellip;,
+</i><i>a</i><sub><i>n</i></sub>} are linear combinations of other elements of the set, the span of vectors {<i>a</i><sub><i>1</i></sub><i>,
+</i><i>a</i><sub><i>2</i></sub><i>,&hellip;,
+</i><i>a</i><sub><i>n</i></sub>} coincides with
+                                    <i>R</i><sup><i>m</i></sup>, and the vectors {<i>a</i><sub><i>1</i></sub><i>,
+</i><i>a</i><sub><i>2</i></sub><i>,&hellip;,
+</i><i>a</i><sub><i>n</i></sub>} are linearly independent.</p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>The initial concepts introduced in Linear Algebra form the basis that spans all subsequent concepts. This is particularly true when vectors of the vector equation are connoted as vector spaces, when the linear combination<i><b> b</b></i> of the matrix equation takes the form of the eigenvector scaled by an eigenvalue, and, for linear transformations, when <i><b>x</b></i> becomes the kernel (or null space) which maps to the zero vector, and
+                                    <i>T(</i><i><b>x</b></i><i>)</i> the range (or column space) which maps from a vector <i><b>x</b></i>. The study of Linear Algebra involves viewing much of the same phenomena from different perspectives where they can be applied to different types of problems. Gaining the early intuition makes subsequent learning less of a surprise and more of a natural progression. Meanwhile, the unfolding of new considerations adds depth and meaning to prior learning, so regularly surveying learned concepts may be helpful for better appreciating interconnections.
+                                </p>
+                            </article>
+                        </div>
+                        <a href="#collapse0.7" class="collapse" id="collapse0.7">[-]</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="accordion">
+                        <a href="#expand0.5" class="expand" id="expand0.5">[+]</a> Avoid Calculus errors
+                        <div class="extensible">
+                            <article>
+                                <h5><time datetime="2020-06-10">June 10th, 2020</time></h5>
+                                <br>
+                                <p>
+                                    <u>Foundations</u></p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>When applying trigonometric identities, a common mistake is to forget or confuse formulas as well as the intuition behind their construction. Remember that, where intuition might fail, higher-level patterns might instead be used to reconstruct formulas and aid recall.</p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>In some cases, patterns extend across identities:
+
+                                </p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>Both the half-angle and power-reducing formulas involve functions
+                                    <i>f</i>(<i>t</i>) = (1 &ndash; cos(<i>t</i>))/2 and <i>g</i>(<i>t</i>) = (1 + cos(<i>t</i>))/2. For both sets of identities, the formulas corresponding to: sin invoke <i>f</i>(<i>t</i>), cos invoke <i>g</i>(<i>t</i>), and tan invoke <i>f</i>(<i>t</i>)/<i>g</i>(<i>t</i>). Half-angle formulas take the square root of, while power-reducing formulas double the parameter value of, each invocation.</p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>The angle sum/difference formulas compose the double angle formulas, so committing the latter to memory is unnecessary.</p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>
+                                    Patterns can take on any number of forms and scope. A direct relationship between sum/difference-to-product and product-to-sum/difference identities can be more difficult to establish. As one example:</p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>
+                                    On either side of the equation are a product of two trigonometric functions and a binomial of two trigonometric functions.</p>
+                                <p>On the left side of the equation (i.e. initial expression), the parameter values are angles <i>a</i> and <i>b.</i></p>
+                                <p>On the right side of the equation (i.e. final expression), the parameter values are angles (<i>a
+</i>+/<i>&ndash;</i>
+                                    <i>b</i>) and (<i>a &ndash;</i>/+
+                                    <i>b</i>).</p>
+                                <p>For a product of both sine and cosine, the equivalent binomial is a form of sine +/&ndash; sine, and the angles on the right side of the equation are (<i>a</i> + <i>b</i>) and (<i>a</i> &ndash; <i>b</i>).</p>
+                                <p>For a product of either sine or cosine, the equivalent binomial is a form of cosine +/&ndash; cosine, and the angles on the right side of the equation are (<i>a</i> &ndash; <i>b</i>) and (<i>a</i> + <i>b</i>).</p>
+                                <p>
+                                    For a product where the second function is cosine, the terms of the equivalent binomial are added.</p>
+                                <p>
+                                    For a product where the second function is sine, the terms of the equivalent binomial are subtracted.</p>
+                                <p>
+                                    For a binomial on the left side of the equation, the product on the right side of the equation is multiplied by two, and each angle is divided by two.</p>
+                                <p>
+                                    For a product on the left side of the equation, each term of the (or, the entire) binomial on right side of the equation is divided by two.</p>
+                                <p>
+                                    For a binomial on the left side of the equation where both functions are cosine, the product on the right side of the equation is also multiplied by negative one.</p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>
+                                    Here, developing the basic intuition, if not a separate set of patterns for each identity, would likely be more efficient.</p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>
+                                    &ndash;
+                                </p>
+                                <p><br/>
+
+                                </p>
+                                <p><u>Integrals</u></p>
+                                <p><br/>
+
+                                </p>
+                                <p>When applying
+                                    <i>u</i>-substitution to an expression, a common mistake is to forget or confuse elements of the <i>dx</i> substitute when attempting the operation mentally<i>. </i>Remember to write out the factorization required to convert to <i>du,</i> as frequently doing otherwise could raise the likelihood of oversight when a more complex factorization is entailed.
+                                </p>
+                                <p><br/>
+
+                                </p>
+                                <p>For example:
+                                </p>
+                                <p><i>	</i>[3(1 &ndash; <i>x</i>/7)<sup>3</sup> &ndash; 2(1 &ndash; <i>x</i>/7)<sup>3</sup>]<i>x</i>
+                                    <i>dx</i></p>
+                                <p><i>	u</i> = 1 &ndash; (<i>x</i>/7); <i>du</i> = (-1/7) <i>dx</i></p>
+                                <p> [3(1 &ndash; <i>x</i>/7)<sup>3</sup> &ndash; 2(1 &ndash; <i>x</i>/7)<sup>3</sup>]<i>x</i> (-7)(-1/7) <i>dx</i></p>
+                                <p> [3<i>u</i><sup>3</sup> &ndash; 2<i>u</i><sup>3</sup>]<i>x</i><b>
+</b>(-7)<i>
+</i><i>du</i></p>
+                                <p><i>	x</i> = 7(1 &ndash; <i>u</i>)</p>
+                                <p> [3<i>u</i><sup>3</sup> &ndash; 2<i>u</i><sup>3</sup>](7(1 &ndash;
+                                    <i> u</i>))(-7)<i>
+</i><i>du</i></p>
+                                <p><br/>
+
+                                </p>
+                                <p>&ndash;</p>
+                                <p><br/>
+
+                                </p>
+                                <p>When re-applying integration by parts to an expression <i>xy</i>, where <i>u</i> equals <i>x</i> and <i>v</i> equals the antiderivative of <i>y</i>, a common mistake is to set<i> u</i> equal to the
+                                    <i>y</i>-term. Remember that, in subsequent applications of integration by parts, <i>u</i> equals the derivative of the <i>x</i>-term from the previous step.</p>
+                                <p><br/>
+
+                                </p>
+                                <p>&ndash;
+                                </p>
+                                <p><br/>
+
+                                </p>
+                                <p>When integrating exponential functions, where
+                                    <i>x</i><sup><i>a
+</i></sup>becomes (
+                                    <i>x</i><sup><i>a</i></sup><sup>
+</sup><sup>+</sup><sup>
+1</sup>/(<i>a</i> + 1)), a common mistake is to omit (1/(<i>a
+</i><i>+</i> 1)) after converting <i>x</i><sup><i>a
+</i></sup>to
+                                    <i>x</i><sup><i>a</i></sup><sup>
+</sup><sup>+</sup><sup>
+1</sup>. In that case, it may be helpful to always write (<i>x</i><sup><i>a</i></sup><sup>
+</sup><sup>+</sup><sup>
+1</sup>/(<i>a</i> + 1)) as (1/(<i>a</i> + 1))(
+                                    <i>x</i><sup><i>a</i></sup><sup>
+</sup><sup>+</sup><sup>
+1</sup>) where deliberately writing (1/(<i>a</i> + 1)) first may help prevent oversight.</p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>
+                                    &ndash;</p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>When integrating trigonometric and/or exponential functions where one of the limits of integration is 0, a common mistake is to dismiss the integral evaluated at the limit of 0. Remember to evaluate each term at both limits even if the integrand does not contain trigonometric or exponential functions, as frequent dismissal, even where valid in some cases, makes mental error in other cases more likely.</p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>
+                                    &ndash;
+                                </p>
+                                <p><br/>
+
+                                </p>
+                                <p>When integrating to find area A by &int;
+                                    <i>f dA </i>or volume V by<i> </i>&int;
+                                    <i>f dV</i> where
+                                    <i>f</i> is bound by shape<i> S</i>, a common mistake is to forget how to simplify the expression without formal integration. Remember that when <i>f</i> is a constant <i>K
+</i>that &int; <i>dA</i> can be converted to <i>A</i>(<i>S</i>)<i>
+</i>and &int; <i>dV</i> can be converted to<i>
+V</i>(<i>S</i>), such that
+                                    <i>V</i> = <i>K </i>&int;
+                                    <i>dA</i> = <i>K</i> (
+                                    <i>A</i>(<i>S</i>)) and <i>V</i> = <i>K </i>&int;
+                                    <i>d</i><i>V</i> = <i>K</i> (
+                                    <i>V</i>(<i>S</i>)).</p>
+                                <p><br/>
+
+                                </p>
+                                <p>&ndash;</p>
+                                <p><br/>
+
+                                </p>
+                                <p>When converting from Cartesian to spherical coordinate system and
+                                    <i>f</i> is bound by shape<i> S</i> which is a cone, a common mistake is to determine <i>&Phi;</i> by the assumption that <i>S</i> is a cone with right angle at the vertex and thus <i>&Phi; </i><i>=
+(</i>&pi; / 4). Remember when computing limits of integration for <i>&Phi;</i> where
+                                    <i> S</i> is defined as<i>
+</i>cone
+                                    <i>z = a</i>&radic;(<i>x</i><sup>2</sup> + <i>y</i><sup>2</sup>) that the outer edge of the cone forms an angle <i>&Phi;
+</i>with the horizontal equal to tan<sup>-1</sup>(1/<i>a</i>), which is found intuitively by converting variables from Cartesian to spherical within the equation of the cone.</p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>
+                                    For example:
+                                </p>
+                                <p><i>	z
+= a</i>&radic;(<i>x</i><sup>2</sup> + <i>y</i><sup>2</sup>)</p>
+                                <p><i>	&rho;</i><sup>
+</sup>cos(<i>&Phi;</i>) =
+                                    <i>a
+r</i>;</p>
+                                <p><i>		x</i><sup><i>2</i></sup> + <i>y</i><sup><i>2</i></sup> =
+                                    <i>r</i><sup>2</sup></p>
+                                <p><sup>		</sup>[<i>&rho;</i><sup>
+</sup>cos(<i>&theta;</i>) sin(
+                                    <i>&Phi;</i>)]<sup>2</sup> + [<i>&rho;</i><sup>
+</sup>sin(<i>&theta;</i>) sin(
+                                    <i>&Phi;</i>)]<sup>2
+ </sup>=
+                                    <i>r</i><sup>2</sup></p>
+                                <p><sup>		</sup>[cos<sup>2</sup>(<i>&theta;</i>) + sin
+                                    <sup>2</sup>(<i>&theta;</i>)][<i>&rho;</i><sup>
+</sup>sin(<i>&Phi;</i>)]<sup>2
+</sup>=
+                                    <i>r</i><sup>2</sup></p>
+                                <p> <i>&rho;</i> sin(
+                                    <i>&Phi;</i>) =
+                                    <i>r</i></p>
+                                <p><i>	&rho;</i><sup>
+</sup>cos(<i>&Phi;</i>) =
+                                    <i>a
+</i><i>&rho;</i> sin(
+                                    <i>&Phi;</i>)</p>
+                                <p> 1 = <i>a
+</i>[<i>&rho;</i> sin(
+                                    <i>&Phi;</i>)] / [<i>&rho;</i><sup>
+</sup>cos(<i>&Phi;</i>)]</p>
+                                <p> (1/<i>a</i>) = tan(<i>&Phi;</i>)</p>
+                                <p>
+                                    <i>&Phi;</i> = tan
+                                    <sup>-1</sup>(1/<i>a</i>)</p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>Where the vertex angle is (&pi; / 2): <i>a</i> = 1 and <i>&Phi;
+</i><i>=
+</i>tan<sup>-1</sup>(1) = (&pi; / 4).</p>
+                                <p>
+                                    <i>	</i></p>
+                                <p>&ndash;
+                                </p>
+                                <p><br/>
+
+                                </p>
+                                <p>When parameterizing a cone provided only its graphical features, a common mistake is to fail to convert all of its features into an equation. Remember that, when parameterizing in terms of radius<i>
+</i><i>s</i> and angle
+                                    <i>t</i>, that
+                                    <i>
+</i>for radius
+                                    <i>
+</i><i>s</i>,<i>
+</i>base radius <i>a</i> and height <i>h</i>, z = <i>h</i>[(1/<i>a</i>)<i>s</i>], and when the cone is inverted,<i>
+</i><i>z</i> = <i>h</i>[1 &ndash; (1/<i>a</i>)<i>s</i>]. When parameterizing in terms of<i>
+x</i> and
+                                    <i>
+y</i>,
+                                    <i>s</i> would be expressed as &radic;(<i>x</i><sup>2</sup> + <i>y</i><sup>2</sup>). Hence,
+                                    <i>r</i>(<i>s</i>,<i>t</i>) = &lt;<i>s</i>cos(<i>t</i>),<i>
+s</i>sin(<i>t</i>),
+                                    <i>h</i>[1 &ndash; (1/<i>a</i>)<i>s</i>]&gt; and <i>r</i>(<i>x</i>,<i>y</i>) = &lt;<i>x</i>,
+                                    <i>y,
+h</i>[1 &ndash; (1/<i>a</i>)&radic;(<i>x</i><sup>2</sup> + <i>y</i><sup>2</sup>) ]&gt;.
+                                </p>
+                                <p><br/>
+
+                                </p>
+                                <p>&ndash;
+                                </p>
+                                <p><br/>
+
+                                </p>
+                                <p>When converting from Cartesian to either polar, cylindrical or spherical coordinate system, a common mistake is to forget to carry forward variables involved in the conversion of<i> dA</i> (
+                                    <i>r </i>for polar) or<i>
+dV </i>(<i>r</i> for cylindrical and
+                                    <i>&rho;</i><sup><i>2</i></sup>sin(<i>&Phi;</i>) for spherical).<i> 
+</i>Remember that the integrands <i>f
+dA</i> or
+                                    <i>f dV </i>can be written as
+                                    <i>r </i>[<i>f</i>]
+                                    <i>drd</i><i>&theta;</i> for polar or
+                                    <i>r </i>[<i>f</i>]
+                                    <i>dzdrd</i><i>&theta;
+</i>for cylindrical and
+                                    <i>&rho;</i><sup><i>2</i></sup>sin(<i>&Phi;</i>)<i>
+</i>[<i>f</i>]
+                                    <i>d&Phi;d&theta;</i> for spherical, where the brackets distinguish those elements of the expression that are due for integration.</p>
+                                <p><br/>
+
+                                </p>
+                                <p>For example:
+                                </p>
+                                <p><i>	</i>[<i>x<sup>2</sup></i> + <i>y<sup>2</sup></i> + <i>z<sup>2</sup></i>]
+                                    <i>dV =
+ &rho;<sup>2</sup></i>sin(<i>&Phi;</i>)<i>
+</i>[<i>&rho;<sup>2</sup></i>]
+                                    <i>d&rho;d&Phi;d&theta;
+= </i>sin(<i>&Phi;</i>)<i>
+</i>[<i>&rho;<sup>4</sup></i>]
+                                    <i>d&rho;d&Phi;d&theta;
+</i>
+                                </p>
+                                <p><br/>
+
+                                </p>
+                                <p>&ndash;</p>
+                                <p><br/>
+
+                                </p>
+                                <p><u>Vectors</u></p>
+                                <p><br/>
+
+                                </p>
+                                <p>When visually assessing the direction of curl for a vector field <i>F</i>, a common mistake is to misapply the right-hand rule and reverse the direction. Remember this alternate approach:
+                                </p>
+                                <p><br/>
+
+                                </p>
+                                <p>a. For each axis, visualize (i.e. tilt, for a non-vertical axis) the graph to where the axis is situated in the vertical position (typically associated with
+                                    <i>z</i>). For example, if the
+                                    <i>y</i>-axis was horizontal, tilt all the elements in the graph along with the<i> y</i>-axis until
+                                    <i> y</i> is vertical (assuming the typical position of<i> z</i>).<i>
+</i>While so doing, view the vector field against that axis from a two-dimensional perspective (agnostic to one of two horizontal axes), determining whether individual vectors in the field cross each other. For example, a cylindrical rotation about that axis would in two dimensions demonstrate crossing between individual vectors that, in three dimensions, would be in front of and behind the axis. Crossing indicates rotation.</p>
+                                <p><br/>
+
+                                </p>
+                                <p>b. When rotation is identified, again tilt that vertical axis down so that it is perpendicular to your line of vision. For example, the axis would point directly toward your eyes on the positive side and directly away from your eyes on the negative side. View the vector field from this perspective and visualize drawing a circle around the axis, following the direction of the vectors. Assess whether that circle is being drawn in a clockwise or counterclockwise direction. That direction indicates the direction of curl (clockwise is negative; counterclockwise is positive).</p>
+                                <p><br/>
+
+                                </p>
+                                <p>&ndash;
+                                </p>
+                                <p><br/>
+
+                                </p>
+                                <p>When computing the surface area of surface <i>S</i> (alone or as part of the surface integral for a scalar function) represented parametrically in cylindrical or spherical coordinates, a common mistake is to express
+                                    <i>d</i><i>A</i> as <i>rdr</i><i>dt</i> or <sub><i> </i></sub><i>&rho;</i><sup><i>2</i></sup>sin(<i>&Phi;</i>)<i>d&Phi;d&theta;</i>. Remember that <i>d</i><i>A</i> only includes<i>
+r</i> or <i>&rho;</i><sup><i>2</i></sup>sin(<i>&Phi;</i>) if
+                                    <i>
+S</i><i> </i>is parameterized and the partial derivatives are expressed in Cartesian coordinates and converted to cylindrical or spherical coordinates by replacing instances of<i>
+</i>Cartesian variables with their cylindrical or spherical counterparts<i>.</i>
+
+                                </p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>
+                                    &ndash;</p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>When computing the surface integral against a surface <i>S</i> that is expressed in naturalized form <i>z</i> = <i>f</i>(<i>x</i>,<i>y</i>), a common mistake is to apply the formula | <i>r</i><sub><i>x</i></sub><sub><i>
+</i></sub>x<i>
+r</i><sub><i>y</i></sub> | = &radic;[<i>(dz/dx)</i><sup>2</sup> + (<i>dz</i><i>/</i><i>dy)</i><sup>2</sup> + 1] for
+                                    <i>
+dS</i> where
+                                    <i>
+dS</i> is assumed to be | <i>r</i><sub><i>x</i></sub><sub><i>
+</i></sub>x<i>
+r</i><sub><i>y</i></sub> |
+                                    <i>
+dA </i>before recognizing that the surface integral is for a vector field. Remember that a surface integral for a vector field, where <i>dS</i> equals <i>n</i> * | <i>r</i><sub><i>x</i></sub><sub><i>
+</i></sub>x<i>
+r</i><sub><i>y</i></sub> | <i>dA</i> = [ ( <i>r</i><sub><i>x</i></sub><sub><i>
+</i></sub>x<i>
+r</i><sub><i>y</i></sub> ) / | <i>r</i><sub><i>x</i></sub><sub><i>
+</i></sub>x<i>
+r</i><sub><i>y</i></sub> | ] * | <i>r</i><sub><i>x</i></sub><sub><i>
+</i></sub>x<i>
+r</i><sub><i>y</i></sub> | <i>dA</i> = ( <i>r</i><sub><i>x</i></sub><sub><i>
+</i></sub>x<i>
+r</i><sub><i>y</i></sub> ) <i>dA</i>, ( <i>r</i><sub><i>x</i></sub><sub><i>
+</i></sub>x<i>
+r</i><sub><i>y</i></sub> ) can be computed from | <i>r</i><sub><i>x</i></sub><sub><i>
+</i></sub>x<i>
+r</i><sub><i>y</i></sub> | where its application would have otherwise been appropriate by recognizing that ( <i>r</i><sub><i>x</i></sub><sub><i>
+</i></sub>x<i>
+r</i><sub><i>y</i></sub> ) = &lt; &ndash;<i>(dz/dx)</i>, &ndash;(
+                                    <i>dz</i><i>/</i><i>dy)</i>, 1 &gt;.</p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>
+                                    &ndash;
+                                </p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>When computing the surface integral for a vector field against surface <i>S</i>, where
+                                    <i> S</i> represents a spherical surface,<i> </i><i>&rho;</i> represents fluid density,<i> v</i> represents a velocity field<i> </i>and, for <i>F </i><i>&#9679;
+ </i><i>dS, F </i>= <i>&rho;</i><i>v</i>, a common mistake is to conflate fluid density <i>&rho;</i> with the parametric representation of <i>x</i><sup><i>2</i></sup> +
+                                    <i> y</i><sup><i>2</i></sup> + <i>z</i><sup><i>2</i></sup> in <i>S</i>. Remember that a variable name can represent different expressions in different contexts. Consider renaming instances of a variable name that appears in multiple contexts within the same problem, as is done for radius <i>r</i> and angle <i>&theta;</i> when represented as parameters of representation <i>r</i>, becoming <i>r</i>(<i>s</i>,<i>t</i>) instead of <i>r</i>(<i>r</i>,<i>&theta;</i>).</p>
+                                <p><br/>
+
+                                </p>
+                                <p>
+                                    &ndash;
+                                </p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>When computing the surface integral for a vector field against surface <i>S</i> represented parametrically in cylindrical or spherical coordinates, a common mistake is to express
+                                    <i>dS</i> as <i>r</i><sub><i>s
+</i></sub>x<i> r</i><sub><i>t</i></sub><i>
+rdr</i><i>dt</i> or <i>r</i><sub><i>&theta;</i></sub><sub><i>
+</i></sub>x<i> r</i><sub><i>&Phi;</i></sub><sub><i>
+</i></sub><i>&rho;</i><sup><i>2</i></sup>sin(<i>&Phi;</i>)<i>d&Phi;d&theta;</i>. Remember that <i>dS</i> only includes<i>
+r</i> or
+                                    <i>&rho;</i><sup><i>2</i></sup>sin(<i>&Phi;</i>) if
+                                    <i>
+S</i><i> </i>is parameterized and the partial derivatives are expressed in Cartesian coordinates and converted to cylindrical or spherical coordinates by replacing instances of<i>
+</i>Cartesian variables with their cylindrical or spherical counterparts<i>.</i></p>
+                                <p><br/>
+
+                                </p>
+                                <p>&ndash;
+                                </p>
+                                <p> </p>
+                                <p>When computing the surface integral for a vector field against surface <i>S</i> represented parametrically as <i>r</i>(<i>s,t</i>), a common mistake is to forget that the orientation of <i>S</i> determines polarity. Remember that if <i>S</i> points upward above the <i>xy</i>-plane, then the <i>z</i>-component of the cross product <i>r</i><sub><i>s</i></sub><sub> </sub>x
+                                    <i>r</i><sub><i>t</i></sub><sub>  </sub>must be positive. If
+                                    <i>S</i> points downward below the <i>xy</i>-plane, then the <i>z</i>-component of the cross product <i>r</i><sub><i>s </i></sub><i>x r</i><sub><i>t</i></sub><sub>
+ </sub>must be negative. If <i>S</i> points away from the <i>z</i>-axis, then the <i>x</i>- and <i>y</i>- components of the cross product <i>r</i><sub><i>s </i></sub>x<i>
+r</i><sub><i>t</i></sub><sub> </sub>must be positive. If
+                                    <i>S</i> points toward the
+                                    <i>z</i>-axis, then the <i>x</i>- and <i>y</i>- components of the cross product <i>r</i><sub><i>s </i></sub>x<i>
+r</i><sub><i>t</i></sub><sub> </sub>must be negative. If any of the above conditions are false, for the integrand of the surface integral,<i>
+F </i><i>&#9679;</i><i>
+</i><i>dr</i> = &ndash; (<i>F
+</i><i>&#9679;</i><i>
+ </i><i>r</i><sub>s</sub><sub><i>
+</i></sub>x<i> r</i><sub><i>t</i></sub>)<i>
+dsdt = F </i><i>&#9679;</i><i>
+ </i>&ndash; (
+                                    <i>r</i><sub>s</sub><sub><i>
+</i></sub>x<i> r</i><sub><i>t</i></sub>)<i>
+dsdt = F </i><i>&#9679;</i><i>
+ </i><i>r</i><sub>t</sub><sub><i>
+</i></sub>x<i> r</i><sub><i>s</i></sub><i>
+dsd</i><i>t.</i></p>
+                                <p><br/>
+
+                                </p>
+                                <p>&ndash;</p>
+                                <p><br/>
+
+                                </p>
+                                <p><u>Appli</u><u>cations</u></p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>When interpreting the motion of a satellite in circular orbit, a common mistake is to assume that the satellite maintains its speed by forward acceleration. Remember that a satellite with constant speed
+                                    <i>v </i>has no tangential (forward) acceleration <i>a
+</i>=
+                                    <i>dv</i>/<i>dt</i>, where the derivative of constant <i>v</i> is 0. In that case and generally-speaking, the only force acting on a satellite in circular orbit is centripetal (central) acceleration caused by gravitational force. The force being perpendicular to the direction of tangential velocity has neither positive nor negative effect on speed. Despite being in free fall, the reason that the satellite is not pulled to the ground is that its tangential velocity produces a trajectory that matches the curvature of the planet, sufficient to offset the constant gravitational pull toward the planet center which balances the angular motion of the satellite.</p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>
+                                    &ndash;
+                                </p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>When interpreting the non-motion of a person seated on a chair, a common mistake is to assume that no horizontal forces act on the person, and that spinal compression is generated exclusively by the combined effect of the gravitational force pulling downward toward the plane of Earth and the normal force pushing upward from the plane of the seat. Remember that a person seated in a perfectly smooth-surface chair likely (depending on the angle of the seat and the posture of the person) slips at a speed no greater than
+                                    <i>v</i> = &int;
+                                    <i>a
+dt</i> where
+                                    <i>
+a</i> =
+                                    <i>
+F</i><sub><i>net</i></sub>/<i>m
+</i>as the weight of the person&rsquo;s legs pull their body forward. When one subject is in contact with and moves across a second stationary subject, particles of the moving subject push against particles of the stationary (non-smooth) subject, while particles of the stationary subject push back against those of the moving subject, in this case, producing the effect of static friction <i>f</i><sub><i>s</i></sub> parallel to the plane of the seat.
+
+                                </p>
+                                <p>
+                                    <br/>
+
+                                </p>
+                                <p>
+                                    &ndash;</p></article>
+                        </div>
+                        <a href="#collapse0.5" class="collapse" id="collapse0.5">[-]</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="accordion">
+                        <a href="#expand0.4" class="expand" id="expand0.4">[+]</a> Create a synthesizer
+                        <div class="extensible">
+                            <article>
+                                <h5><time datetime="2019-08-18">August 18th, 2019</time></h5>
+                                <p>This walkthrough addresses recording programmatically-generated sounds with the <a rel="noreferrer noopener" aria-label="Web Audio (opens in a new tab)" href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" target="_blank">Web Audio</a> and <a rel="noreferrer noopener" aria-label="MediaStream Recording (opens in a new tab)" href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Recording_API" target="_blank">MediaStream Recording</a> APIs, as demonstrated by a simple <a href="https://rjbx.github.io/audible">synthesizer app</a> written with jQuery. For those unfamiliar with jQuery syntax, an <a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://learn.freecodecamp.org/front-end-libraries/jquery" target="_blank">interactive tutorial</a> is available at <a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://learn.freecodecamp.org/front-end-libraries/" target="_blank">FreeCodeCamp</a>. Walkthroughs from <a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://soledadpenades.com/" target="_blank">Soledad Penadés</a> and <a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="http://marcgg.com/" target="_blank">Marc Gauthier</a> are reliable resources for understanding, independently, the sound -<a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://hacks.mozilla.org/2016/04/record-almost-everything-in-the-browser-with-mediarecorder/" target="_blank">recording</a> and -<a rel="noreferrer noopener" aria-label="generating (opens in a new tab)" href="http://marcgg.com/blog/2016/11/01/javascript-audio/" target="_blank">generating</a> processes in greater detail.</p>
+
+                                <p><em>Firefox Users: A <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1435625" target="_blank" rel="noreferrer noopener" aria-label="bug (opens in a new tab)">bug</a> currently prevents gain ramping. Until the bug is resolved, a Chromium-based browser is recommended.</em></p>
+
+                                <h4><b>Setup</b></h4>
+                                <h4>Create views</h4>
+                                <p>Consider what actions comprise each broader functionality. While generated sounds may be fed directly to the recorder, playing back the sounds as they are being recorded makes sense, as does providing options for generating different sounds and controlling the length of the recording. </p>
+                                <p>In the context of a synthesizer app, views correspond to keys for playing different musical notes, in addition to the aforementioned controls. </p>
+                                <h4>Create global fields</h4>
+                                <p>The Web Audio API is built around <code><a rel="noreferrer noopener" aria-label="AudioContext (opens in a new tab)" href="https://developer.mozilla.org/en-US/docs/Web/API/AudioContext" target="_blank">AudioContext</a></code>, which handles the creation as well as storage of one or a series of a processing module called an <code><a rel="noreferrer noopener" aria-label="AudioNodes (opens in a new tab)" href="https://developer.mozilla.org/en-US/docs/Web/API/AudioNode" target="_blank">AudioNode</a></code>. Examples of an <code>AudioNode</code>, which is covered later, include sources such as an <code>Oscillator</code>, an intermediate processor such as <code>BiquadFilter</code> and <code>Gain</code>, and a destination which represents the result of all audio in the context. Because the audio in this example has two destinations -- speaker and recorder -- corresponding nodes are created.</p>
+                                <pre class="wp-block-preformatted"> // I/O<br> let context = false;<br> let speakerNode = false;<br> let recorderNode = false;<br><br> // Prefs<br> /* <em>e.g. wave type, pitch</em> */<br><br> // View IDs<br> /* <em>e.g. play, stop, record, player, display, sounds, etc. </em>*/<br></pre>
+                                <h4>Define permission event</h4>
+                                <p>A common browser policy discourages developers from playing sounds prior to obtaining user permission. A developer is free to approach this objective in the manner they see fit, so long as their solution involves user engagement with the page; without which, an error is likely to be thrown. A straightforward implementation might involve listening for a click or key event before attempting to play sounds. </p>
+                                <pre class="wp-block-preformatted">$(document).ready(function() {<br>  if (!context) { <br>    $(display).on('click', initializeAudioContext);<br>    $(document).on('keypress', initializeAudioContext);<br>  }<br>}<br></pre>
+                                <h4>Request AudioContext from browser with Promise</h4>
+                                <p>A <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">Promise</a></code> provides a convenient interface for associating asynchronous action with dependent logic. A <code>Promise</code> is constructed with an executor that accepts as arguments a handler for, each, resolution and rejection of the action. </p>
+                                <pre class="wp-block-preformatted">function getAudioContext() {<br>   return new Promise((resolve, reject) =&gt; { <br>       resolve(<br>         new (window.AudioContext || window.webkitAudioContext)()<br>       )<br>       reject(<br>         "Your browser rejected a request to access the Web Audio API, a required component"<br>       )<br>     }<br>   );<br> }<br></pre>
+                                <p>When the asynchronous action is complete, the <code>Promise</code> is said to be settled -- either fulfilled or rejected. If the <code>Promise</code> is fulfilled, the value resulting from the executor <code>resolve</code> handler is accessible from the <code>.then()</code> method handler argument, where it can be accessed by dependent logic. Likewise, a rejected <code>Promise</code> avails the reason resulting from the executor <code>reject</code> handler by way of the <code>.catch()</code> method which also accepts a handler argument, and these method calls are chained from the root <code>Promise</code>.</p>
+                                <pre class="wp-block-preformatted">function initializeAudioContext(listener) {
+  getAudioContext()
+    .then(
+      value =&gt; {
+        context = value;
+        speakerNode = context.destination;
+        connectAudioDestination();
+        ...
+    }).catch(
+      reason =&gt; {
+        console.log(reason);
+    });
+}</pre>
+                                <h4><b>Generate sounds</b></h4>
+                                <h4>Instantiate Oscillator from AudioContext</h4>
+                                <p>An <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">Oscillator</a></code> produces a constant tone representing a periodic waveform at a certain frequency. A sine waveform at a frequency of 440Hz is the default. The <code>.start()</code> method indicates the time at which the <code>Oscillator</code> should begin playing the tone, which is immediately if no argument is provided. </p>
+                                <pre class="wp-block-preformatted">let osc = context.createOscillator();<br>osc.connect(speakerNode);<br>osc.start();</pre>
+                                <h4>Configure Oscillator to produce distinct sounds</h4>
+                                <p>Assigning distinct values to the type and frequency properties changes the tone. <code><a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://developer.mozilla.org/en-US/docs/Web/API/GainNode" target="_blank">Gain</a></code> affects the volume of the tone, which is instantiated by invoking <code>createGain()</code> from the given <code>AudioContext</code>. </p>
+                                <p><code>Gain</code> inherits methods from the <code><a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://developer.mozilla.org/en-US/docs/Web/API/AudioParam" target="_blank">AudioParam</a></code> interface that gradually increase or decrease the property value -- in this case, volume -- over time. Each method accepts two arguments: the targeted value, and the number of seconds from the previous processing event to reach the target. Invoking one of these methods from gain can be useful for fading out volume. </p>
+                                <p>As, <a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://en.wikipedia.org/wiki/Sound_intensity#Inverse-square_law" target="_blank">in nature</a> and generally-speaking, sound intensity decreases at an exponential rate between two points, an exponential rather than a linear ramp is more suitable.</p>
+                                <pre class="wp-block-preformatted">function frequencyToSound(frequency) {
+  ...
+  osc.connect(speakerNode);
+  let  gain = context.createGain();
+  gain.gain.exponentialRampToValueAtTime(
+    0.00001, context.currentTime + 3.5
+  );
+  gain.connect(speakerNode);
+  osc.connect(gain);
+  osc.type = 'sine'; // can also be 'square', 'triangle', 'sawtooth', or 'custom'
+  osc.frequency.value = frequency; // can be between -22050 and 22050 inclusive
+  ...
+}</pre>
+                                <p>For greater control, intermediate processing can be augmented by a <code><a rel="noreferrer noopener" aria-label="BiquadFilterNode (opens in a new tab)" href="https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode" target="_blank">BiquadFilterNode</a></code>.</p>
+                                <h4>Associate views with sound output</h4>
+                                <p>In the context of a synthesizer app, where views correspond to keys that correspond to notes on a musical scale, view interactions can be handled to identify the note by its <a rel="noreferrer noopener" aria-label="frequency (opens in a new tab)" href="https://www.audiology.org/sites/default/files/ChasinConversionChart.pdf" target="_blank">frequency</a> from, for example, a switch method or key-value object associating frequencies with view IDs. Other properties including waveform type and pitch (as a frequency multiplier) could be extrapolated by the same means.</p>
+                                <pre class="wp-block-preformatted">$(sound).on('click', () =&gt; {
+  let id = '#' + event.target.id;
+  ...
+  playPad(id);
+})
+  
+$(document).keypress(e =&gt; {
+  let key = e.which;
+  ...
+  playPad(id);
+})
+
+function playPad(id) {
+  let frequency = idToFrequency(id);
+  let sound = frequencyToSound(frequency);
+  sound.start(0);
+}
+
+function idToFrequency(id) {
+  switch(id) {
+    case viewId: return 1047;
+    ...
+    default: return 0;
+  }
+}</pre>
+                                <h4><b>Record sounds</b></h4>
+                                <h4>Instantiate MediaRecorder from MediaStream</h4>
+                                <p>A <code><a rel="noreferrer noopener" aria-label="MediaRecorder (opens in a new tab)" href="https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder" target="_blank">MediaRecorder</a></code> captures an audio or video <code><a rel="noreferrer noopener" aria-label="MediaStream (opens in a new tab)" href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStream" target="_blank">MediaStream</a></code> and saves it as a <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Blob" target="_blank" rel="noreferrer noopener" aria-label="Blob (opens in a new tab)">Blob</a></code> of media data that can be decoded by a media player. Calls to the <code>start()</code>, <code>pause()</code>, <code>resume()</code> and <code>stop()</code> methods control the length of the recording, with corresponding handlers fired at each call. A <code>MediaStream</code> can be generated as a destination from a sensory device or a compatible source node.</p>
+                                <pre class="wp-block-preformatted">function captureMediaStream(stream) {<br>  let recorder = new MediaRecorder(stream); <br>  recorder.start();<br>  ...<br>}</pre>
+                                <p>The <code>getUserMedia()</code> method attempts to gain access to a <code>MediaStream</code> from the sensory devices detected from the browser, which by default should generate a prompt requesting user permission. The return value is a <code>Promise</code> which, if fulfilled, resolves the stream to any dependent logic from the <code>then()</code> method handler argument.</p>
+                                <pre class="wp-block-preformatted">function getUserMedia() {
+  return navigator.mediaDevices.getUserMedia({ audio: true, video: true });
+}
+
+getUserMedia().then(stream =&gt; captureMediaStream(stream));</pre>
+                                <p>In the next section, the stream will be provided by an output node generated from the <code>AudioContext</code> associated with the sound-generating <code>Oscillator</code>. </p>
+                                <h4>Configure MediaRecorder for playback and download</h4>
+                                <p>Before the recording can be played back or downloaded, the data must be compiled. A data set can be built from <code>ondataavailable</code> and finalized in <code>onstop</code>. </p>
+                                <p>The <code>ondataavailable</code> handler passes a data-storing event that spans the time since, either, the previous handler callback, or, the recording began. The callback occurs either when the recording ends, as well as during the recording if, either, <code>start()</code> is passed a timeslice interval argument or <code>requestData()</code> is invoked. Storing the event data in an array makes sense where multiple data chunks may be returned during a single recording. </p>
+                                <p>The <code>onstop</code> handler accesses the data array to instantiate a data <code>Blob</code> that is accessed from a URL created with <code>URL.createObjectURL()</code>. The URL can then be assigned to the source attribute of an <code>audio</code> player element and hyperlink reference attribute of an <code>anchor</code> download element.</p>
+                                <pre class="wp-block-preformatted">let chunks = [];
+
+recorder.ondataavailable = e =&gt; chunks.push(e.data));
+
+recorder.onstop = e =&gt; {
+  let blob = new Blob(
+    chunks, { 'type' : 'audio/ogg; codecs=opus' }
+  );
+  chunks = [];
+  let url = URL.createObjectURL(blob);
+  $(player).attr('src', url);
+  $(download).attr('href', url);
+  ...
+};</pre>
+                                <h4>Associate views with sound recording</h4>
+                                <p>At a minimum, the recording should be started and stopped, and can also be paused and resumed. View action handlers can be associated with each call. </p>
+                                <pre class="wp-block-preformatted">$(start).on('click', () =&gt; {<br>  ...<br>  recorder.start();<br>  $(display).text(...);<br>});<br><br>$(stop).on('click', () =&gt; {<br>  ...<br>  recorder.stop();<br>  $(display).text(...);<br>});<br><br>...</pre>
+                                <h4><b>Record generated sounds</b></h4>
+                                <p>A few minor modifications to the process for creating the sound generator and recorder establishes a connection between the two elements. The difference stems from adding an extra destination node. </p>
+                                <p>The <code>AudioContext destination</code> property is assigned an <code><a rel="noreferrer noopener" aria-label="AudioDestinationNode (opens in a new tab)" href="https://developer.mozilla.org/en-US/docs/Web/API/AudioDestinationNode" target="_blank">AudioDestinationNode</a></code>, while the <code>getMediaStreamDestination()</code> method returns a <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioDestinationNode" target="_blank" rel="noreferrer noopener" aria-label="MediaStreamAudioDestinationNode (opens in a new tab)">MediaStreamAudioDestinationNode</a></code>. The <code>AudioDestinationNode</code> outputs directly to the speaker, while the <code>MediaStreamAudioDestinationNode</code> contains a stream properly that can be fed to the recorder.</p>
+                                <h4>Save instance of MediaStream destination node</h4>
+                                <h5><em>See also: Setup – Create global fields</em></h5>
+                                <p>Save a reference to the <code>MediaStream</code> destination node that can be accessed from the logic involving both <code>Oscillator</code> and <code>MediaRecorder</code>.</p>
+                                <pre class="wp-block-preformatted">function initializeAudioContext(listener) {<br>  getAudioContext().then(value =&gt; {<br>    context = value;<br>    recorderNode = context.getMediaStreamDestination();<br>    <code>speakerNode = context.destination;</code><br>    ...<br>  });<br>}</pre>
+                                <h4>Connect MediaStream node to generated sound</h4>
+                                <h5><em>See also: Generate sounds – Configure Oscillator to produce distinct sounds</em></h5>
+                                <p>Connecting the <code>Gain</code> to the <code>MediaStream</code> destination node copies the sound output to the recorder stream.</p>
+                                <pre class="wp-block-preformatted">function frequencyToSound(frequency) {<br>  ...<br>  gain.connect(recorderNode);<br>  gain.connect(speakerNode);<br>}</pre>
+                                <h4>Instantiate recorder from MediaStream node</h4>
+                                <h5><em>See also: Record sounds – Instantiate MediaRecorder from MediaStream</em></h5>
+                                <p>Feed the stream to the <code>MediaRecorder</code>. That’s it!</p>
+                                <pre class="wp-block-preformatted">captureMediaStream(recorderNode.stream);<br><br>function captureMediaStream(stream) {<br>  let recorder = new MediaRecorder(stream);<br>  ...<br>}</pre>
+                                <h4>Relevant links</h4>
+                                <p>Guidance on further enhancements involving visualizations and additional controls can be found in the links below</p>
+                                <p style="font-size:14px">
+                                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" rel="noopener noreferrer">Web Audio Intro</a>,
+                                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API" rel="noopener noreferrer">Web Audio Usage</a>,
+                                    <a href="http://marcgg.com/blog/2016/11/01/javascript-audio/" target="_blank" rel="noopener noreferrer">Web Audio Walkthrough</a>,
+                                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Recording_API" rel="noopener noreferrer">MediaStream Recording Intro</a>,
+                                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Recording_API/Using_the_MediaStream_Recording_API" rel="noopener noreferrer">MediaStream Recording Usage</a>,
+                                    <a href="https://hacks.mozilla.org/2016/04/record-almost-everything-in-the-browser-with-mediarecorder/" target="_blank" rel="noopener noreferrer">MediaStream Recording Walkthrough</a>
+                                </p>
+                            </article>
+                        </div>
+                        <a href="#collapse0.4" class="collapse" id="collapse0.4">[-]</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="accordion">
+                        <a href="#expand0.0" class="expand" id="expand0.0">[+]</a> Test a servlet
+                        <div class="extensible">
+                            <article>
+                                <h5><time datetime="2016-07-26">July 26th, 2016</time></h5>
+                                <p>This implementation of a JUnit test for servlet doPost() method relies only on the Mockito library for mocking up instances of&nbsp;<code>HttpRequest</code>,&nbsp;<code>HttpResponse</code>,&nbsp;<code>HttpSession</code>,&nbsp;<code>ServletResponse</code>&nbsp;and&nbsp;<code>RequestDispatcher</code>. </p>
+                                <p>Replace parameter keys and JavaBean instance with those that correspond to values referenced in the associated JSP file from which doPost() is called. </p>
+                                <h4>Mockito Maven dependency: </h4>
+                                <pre>&lt;dependency&gt;
+      &lt;groupid&gt;org.mockito&lt;/groupid&gt;
+      &lt;artifactid&gt;mockito-all&lt;/artifactid&gt;
+      &lt;version&gt;1.9.5&lt;/version&gt;
+&lt;/dependency&gt;</pre>
+                                <h4>JUnit Test</h4>
+                                <pre>import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import java.io.IOException;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.*;
+
+/**
+ * Unit tests for the {@code StockSearchServlet} class.
+ * @author bob@coded.art
+ */
+public class StockSearchServletTest extends HttpServlet {
+    // private fields of this class
+    private static HttpServletRequest request;
+    private static HttpServletResponse response;
+    private static StockSearchServlet servlet;
+    private static final String SYMBOL_PARAMETER_KEY = "symbol";
+    private static final String STARTRANGE_PARAMETER_KEY = "startRange";
+    private static final String ENDRANGE_PARAMETER_KEY = "endRange";
+    private static final String INTERVAL_PARAMETER_KEY = "interval";
+    private static final String SERVICETYPE_PARAMETER_KEY = "serviceType";
+
+    /**
+     * Sets up the logic common to each test in this class
+     */
+    @Before
+    public final void setUp() {
+        request = mock(HttpServletRequest.class);
+        response = mock(HttpServletResponse.class);
+
+        when(request.getParameter("symbol"))
+                .thenReturn("AAPL");
+
+        when(request.getParameter("startRange"))
+                .thenReturn("2016-04-23 00:00:00");
+
+        when(request.getParameter("endRange"))
+                .thenReturn("2016-07-23 00:00:00");
+
+        when(request.getParameter("interval"))
+                .thenReturn("DAY");
+
+        when(request.getParameter("serviceType"))
+                .thenReturn("WEB");
+
+        String symbol = request.getParameter(SYMBOL_PARAMETER_KEY);
+        String startRange = request.getParameter(STARTRANGE_PARAMETER_KEY);
+        String endRange = request.getParameter(ENDRANGE_PARAMETER_KEY);
+        String interval = request.getParameter(INTERVAL_PARAMETER_KEY);
+        String serviceType = request.getParameter(SERVICETYPE_PARAMETER_KEY);
+
+        HttpSession session = mock(HttpSession.class);
+        when(request.getSession()).thenReturn(session);
+        final ServletContext servletContext = mock(ServletContext.class);
+        RequestDispatcher dispatcher = mock(RequestDispatcher.class);
+        when(servletContext
+		.getRequestDispatcher("/stocksearchResults.jsp"))
+		.thenReturn(dispatcher);
+        servlet = new StockSearchServlet() {
+            public ServletContext getServletContext() {
+                return servletContext; // return the mock
+            }
+        };
+
+        StockSearchBean search = 
+		new StockSearchBean(symbol, startRange, endRange, interval);
+        try {
+            switch (serviceType) {
+                case ("BASIC"):
+                    search.processData(ServiceType.BASIC);
+                    break;
+                case ("DATABASE"):
+                    search.processData(ServiceType.DATABASE);
+                    break;
+                case ("WEB"):
+                    search.processData(ServiceType.WEB);
+                    break;
+                default:
+                    search.processData(ServiceType.WEB);
+            }
+        } catch (StockServiceException e) {
+            throw new RuntimeException(e.getMessage());
+        }
+        session.setAttribute("search", search);
+    }
+
+    /**
+     * Verifies that the doPost method throws an exception 
+     * when passed null arguments
+     * @throws ServletException
+     * @throws IOException
+     */
+    @Test(expected = NullPointerException.class)
+    public final void testDoPostPositive() throws ServletException, IOException {
+        servlet.doPost(null, null);
+    }
+
+    /**
+     * Verifies that the doPost method runs without exception
+     * @throws ServletException
+     * @throws IOException
+     */
+    @Test
+    public final void testDoPostNegative() throws ServletException, IOException {
+        boolean throwsException = false;
+        try {
+            servlet.doPost(request, response);
+        } catch (Exception e) {
+            throwsException = true;
+        }
+        assertFalse("doPost throws an exception", throwsException);
+    }
+}</pre>
+                            </article>
+                        </div>
+                        <a href="#collapse0.0" class="collapse" id="collapse0.0">[-]</a>
+                    </div>
+                </li>
+            </ul>
+            <br>
+            <br>
+            <h5>
+                <center>All articles are drafts that have not been second-hand reviewed and may contain errors.</center>
+            </h5>
+        </section>
+        <section>
+            <a class="target" id="misc">
+                <h3>Misc</h3>
+            </a>
+            <br>
+            <ul>
+                <li>
+                    <div class="accordion">
+                        <a href="#expand2.2" class="expand" id="expand2.2">[+]</a> Famous quotes
+                        <div class="extensible">
+                            <article>
+                                <ul>
+                                    <li>
+                                        <p><i>Treat others as you would want to be treated. (Jesus)</i></p>
+                                    </li>
+                                    <li>
+                                        <p><i>Don't judge a book by its cover. (Unknown)</i></p>
+                                    </li>
+                                    <li>
+                                        <p><i>Every action has an equal and opposite reaction. (Newton)</i></p>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                        <a href="#collapse2.2" class="collapse" id="collapse2.2">[-]</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="accordion">
+                        <a href="#expand2.1" class="expand" id="expand2.1">[+]</a> Personal quotes
+                        <div class="extensible">
+                            <article>
+                                <ul>
+                                    <li>
+                                        <p><i>Logic may only be as sound as the extent to which it acknowledges its own limitations.</i></p>
+                                    </li>
+                                    <li>
+                                        <p><i>Constructive criticism encourages progress whereas hate speech declares such an impossibility.</i></p>
+                                    </li>
+                                    <li>
+                                        <p><i>The following pairs, sometimes practiced exclusively, are more often complimentary: purity and practicality; freedom and responsibility; persistence and perspicacity; focus and restraint.</i></p>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                        <a href="#collapse2.1" class="collapse" id="collapse2.1">[-]</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <a class="target" id="chat">
+                <h3>Chat</h3>
+            </a>
+            <br>
+            <form class="contact" action="https://formspree.io/bob@coded.art" method="POST">
+                <ul>
+                    <li>
+                        <input type="text" name="Email" id="email" placeholder="Email*" required="">
+                    </li>
+                    <li>
+                        <input type="text" name="Name" id="name" placeholder="Name">
+                    </li>
+                    <li>
+                        <input type="text" name="Subject" id="subject" placeholder="Subject">
+                    </li>
+                    <li>
+                        <textarea id="message" name="Message" placeholder="Message"></textarea>
+                    </li>
+                    <li>
+                        <input type="submit" value="Send" id="send">
+                    </li>
+                </ul>
+            </form>
+        </section>
+    </main>
+    <footer class="sticky">
+        <form action="#scroll">
+            <input accesskey="t" type="submit" value="––––" id="top">
+        </form>
+        <p class="description">
+            <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Frjbx.github.io">PageSpeed Insights</a>
+        </p>
+    </footer>
+    <footer class="static">
+        <p>Copyright © Robert John</p>
+        <p>Last updated December 2020</p>
+        <ul class="social">
+            <li>
+                <a target="_blank" href="https://github.com/rjbx"><img src="images/social-github.png" alt="Github" width="32" height="32"></a>
+            </li>
+        </ul>
+    </footer>
+</body>
